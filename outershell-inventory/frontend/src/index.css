@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+:root {
+  --navy: #0f172a;
+  --blue: #1d4ed8;
+  --blue-light: #3b82f6;
+  --accent: #38bdf8;
+  --purple: #534AB7;
+  --gray: #94a3b8;
+  --mid: #64748b;
+  --body: #1e293b;
+  --border: #e2e8f0;
+  --bg: #f8fafc;
+  --white: #ffffff;
+  --green: #3B6D11;
+  --green-bg: #EAF3DE;
+  --red: #A32D2D;
+  --red-bg: #FCEBEB;
+  --amber: #854F0B;
+  --amber-bg: #FAEEDA;
+  --blue-bg: #E6F1FB;
+  --blue-text: #185FA5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+.fade-in { animation: fadeIn 0.2s ease; }
+.pulse { animation: pulse 1.2s infinite; }
